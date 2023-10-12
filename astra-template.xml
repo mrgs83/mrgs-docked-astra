@@ -8,15 +8,13 @@
     <Support>https://github.com/mrgs83/mrgs-docked-astra/issues</Support>
     <Overview>A Docker container for Astra on Unraid.</Overview>
     <Category>Media</Category>
-    <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+    <WebUI>http://[IP]:[PORT:8000]/</WebUI>
 
     <Config Name="PUID" Target="PUID" Default="99" Mode="e" Description="User ID" Type="string" Display="always" Required="false" Mask="false">99</Config>
     <Config Name="PGID" Target="PGID" Default="100" Mode="e" Description="Group ID" Type="string" Display="always" Required="false" Mask="false">100</Config>
     <Config Name="Timezone" Target="TZ" Default="Etc/UTC" Mode="e" Description="Timezone information" Type="string" Display="always" Required="false" Mask="false">Etc/UTC</Config>
 
-    <Config Name="HTTP Port" Target="8080" Default="8080" Mode="p" Description="HTTP Port for Astra" Type="string" Display="always" Required="true" Mask="false"></Config>
-    
-    <!-- Use "Container Path" naming to indicate paths in Unraid UI -->
+    <Config Name="WebUI Port" Target="8000" Default="8000" Mode="p" Description="WebUI Port for Astra" Type="string" Display="always" Required="true" Mask="false"></Config>
     <Config Name="Container Path: /etc/astra/license.txt" Target="/etc/astra/license.txt" Default="/mnt/user/appdata/astra/license.txt" Mode="rw" Description="Path to license file on the host" Type="path" Display="always" Required="true" Mask="false"></Config>
-    <Config Name="Container Path: /etc/astra/astra.conf" Target="/etc/astra/astra.conf" Default="/mnt/user/appdata/astra/astra-uniq.conf" Mode="rw" Description="Path to Astra configuration file on the host" Type="path" Display="always" Required="true" Mask="false"></Config>
+    <Config Name="Container Path: /etc/astra/astra.conf" Target="/etc/astra/astra.conf" Default="/mnt/user/appdata/astra/astra.conf" Mode="rw" Description="Path to Astra configuration file on the host" Type="path" Display="always" Required="true" Mask="false"></Config>
 </Container>
