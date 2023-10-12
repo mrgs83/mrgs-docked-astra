@@ -9,12 +9,10 @@
   <Support>https://github.com/mrgs83/mrgs-docked-astra/issues</Support>
   <Project/>
   <Overview>A Docker container for Astra</Overview>
-  <Icon>https://raw.githubusercontent.com/mrgs83/logos/main/astra_sat.png</Icon>
   <Category>Media:Video Applications:</Category>
   <WebUI>http://[IP]:[PORT:8000]/</WebUI>
-  <TemplateURL/>
-  <License/>
+  <Icon>https://raw.githubusercontent.com/mrgs83/logos/main/astra_sat.png</Icon>
   <Config Name="WebUI" Target="8000" Default="8000" Mode="tcp" Description="WebUI port" Type="Port" Display="always"/>
-  <Config Name="License Path" Target="/etc/astra/license.txt" Default="/mnt/user/appdata/astra/license.txt" Mode="rw" Description="Path to license file" Type="Path" Display="always"/>
-  <Config Name="Config Path" Target="/etc/astra/astra.conf" Default="/mnt/user/appdata/astra/astra.conf" Mode="rw" Description="Path to configuration file" Type="Path" Display="always"/>
+  <Config Name="License Path" Target="/etc/astra/license.txt" Default="/mnt/user/appdata/astra/license.txt" Mode="rw" Description="Path to license file."/>
+  <Config Name="Config File" Target="/etc/astra/astra.conf" Default="/mnt/user/appdata/astra/astra.conf" Mode="rw" Description="Path to configuration file."/>
 </Container>
