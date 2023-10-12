@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+    <Name>Astra</Name>
+    <Repository>mrgs83/mrgs-docked-astra:latest</Repository>
+    <Registry>https://hub.docker.com/r/mrgs83/mrgs-docked-astra/</Registry>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/mrgs83/mrgs-docked-astra/issues</Support>
+    <Overview>A Docker container for Astra.</Overview>
+    <Category>Media</Category>
+    <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+
+    <Config Name="PUID" Target="PUID" Default="99" Mode="e" Description="User ID" Type="string" Display="always" Required="false" Mask="false">99</Config>
+    <Config Name="PGID" Target="PGID" Default="100" Mode="e" Description="Group ID" Type="string" Display="always" Required="false" Mask="false">100</Config>
+    <Config Name="Timezone" Target="TZ" Default="Etc/UTC" Mode="e" Description="Timezone information" Type="string" Display="always" Required="false" Mask="false">Etc/UTC</Config>
+
+    <Config Name="HTTP Port" Target="8080" Default="8080" Mode="p" Description="HTTP Port for Astra" Type="string" Display="always" Required="true" Mask="false"></Config>
+    <Config Name="License File" Target="/etc/astra/license.txt" Default="/mnt/user/appdata/astra/license.txt" Mode="rw" Description="Path to license file" Type="path" Display="always" Required="true" Mask="false"></Config>
+    <Config Name="Config File" Target="/etc/astra/astra-sat1.conf" Default="/mnt/user/appdata/astra/astra-sat1.conf" Mode="rw" Description="Path to configuration file" Type="path" Display="always" Required="true" Mask="false"></Config>
+</Container>
