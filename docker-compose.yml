@@ -1,16 +1,16 @@
 version: '3'
 
 services:
-  astra-latest:
-    build: .
-    container_name: astra-latest
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Etc/UTC
+  astra:
+    image: mrgs83/mrgs-docked-astra:latest
+    container_name: astra
     ports:
       - "8080:8080"
     volumes:
       - /mnt/user/appdata/astra/license.txt:/etc/astra/license.txt
       - /mnt/user/appdata/astra/astra.conf:/etc/astra/astra.conf
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
     restart: unless-stopped
