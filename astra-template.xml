@@ -15,4 +15,8 @@
     <Config Name="Timezone" Target="TZ" Default="Etc/UTC" Mode="e" Description="Timezone information" Type="string" Display="always" Required="false" Mask="false">Etc/UTC</Config>
 
     <Config Name="HTTP Port" Target="8080" Default="8080" Mode="p" Description="HTTP Port for Astra" Type="string" Display="always" Required="true" Mask="false"></Config>
-    <Config Name="License File" Target="/etc/astra/license.txt" Default="/mnt/user/appdata/astra/license.txt" Mode="rw" Description="Path to license file" Type="path
+    
+    <!-- Use "Container Path" naming to indicate paths in Unraid UI -->
+    <Config Name="Container Path: /etc/astra/license.txt" Target="/etc/astra/license.txt" Default="/mnt/user/appdata/astra/license.txt" Mode="rw" Description="Path to license file on the host" Type="path" Display="always" Required="true" Mask="false"></Config>
+    <Config Name="Container Path: /etc/astra/astra.conf" Target="/etc/astra/astra.conf" Default="/mnt/user/appdata/astra/astra-uniq.conf" Mode="rw" Description="Path to Astra configuration file on the host" Type="path" Display="always" Required="true" Mask="false"></Config>
+</Container>
