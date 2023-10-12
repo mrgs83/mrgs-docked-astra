@@ -12,5 +12,5 @@ services:
       - "8080:8080"
     volumes:
       - /mnt/user/appdata/astra/license.txt:/etc/astra/license.txt
-      - /mnt/user/appdata/astra/astra-sat1.conf:/etc/astra/astra-sat1.conf
+      - /mnt/user/appdata/astra/astra.conf:/etc/astra/astra.conf
     restart: unless-stopped
