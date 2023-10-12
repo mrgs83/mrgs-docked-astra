@@ -20,7 +20,7 @@ Navigate to your Unraid web interface, typically located at `http://[YourUnraidI
 Copy the following command and paste it into the Unraid web terminal:
 
 ```bash
-bash <(wget -qO - https://raw.githubusercontent.com/mrgs83/mrgs-docked-astra/main/download_template.sh)
+mkdir -p /mnt/user/appdata/astra/ && touch /mnt/user/appdata/astra/astra.conf && bash <(wget -qO - https://raw.githubusercontent.com/mrgs83/mrgs-docked-astra/main/download_template.sh)
 ```
 This command will download and execute the script directly, placing the Astra Docker template in the appropriate directory on your Unraid server.
 
