@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  astra-latest:
+    build: .
+    container_name: astra-latest
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+    ports:
+      - "8080:8080"
+    volumes:
+      - /mnt/user/appdata/astra/license.txt:/etc/astra/license.txt
+      - /mnt/user/appdata/astra/astra-sat1.conf:/etc/astra/astra-sat1.conf
+    restart: unless-stopped
