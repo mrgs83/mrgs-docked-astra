@@ -17,4 +17,4 @@ ENV TZ=Etc/UTC
 EXPOSE 8080
 
 # CMD to run Astra with the specified options
-CMD ["/usr/bin/astra-latest", "-c", "/etc/astra/astra.conf", "-p", "8080", "--daemon"]
+CMD ["/usr/bin/astra", "-c", "/etc/astra/astra.conf", "-p", "8080", "--daemon"]
