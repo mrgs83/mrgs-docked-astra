@@ -2,10 +2,9 @@ version: '3'
 
 services:
   astra:
-    image: mrgs83/mrgs-docked-astra:latest
-    container_name: astra
+    build: .
     ports:
-      - "8080:8080"
+      - "8000:8000"
     volumes:
       - /mnt/user/appdata/astra/license.txt:/etc/astra/license.txt
       - /mnt/user/appdata/astra/astra.conf:/etc/astra/astra.conf
