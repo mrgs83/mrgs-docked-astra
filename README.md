@@ -11,7 +11,7 @@ Before deploying Astra, ensure you have the necessary license and configuration 
   ```
   /mnt/user/appdata/astra/astra-[your-unique-name].conf
   ```
-  Replace `[your-unique-name]` with a descriptor or name that is relevant to your setup (e.g., `astra-living-room.conf`, `astra-bedroom.conf`, etc.)
+  Replace `[your-unique-name]` with a descriptor or name that is relevant to your setup (e.g., `astra-DVB-T.conf`, `astra-DVB-S.conf`, etc.)
 
 ### Step 1: Open Unraid Terminal
 Navigate to your Unraid web interface, typically located at `http://[YourUnraidIP]`. On the bottom right of the dashboard, you should find a "Terminal" button. Click on it to open a web-based terminal.
