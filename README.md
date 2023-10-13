@@ -1,4 +1,4 @@
-## Adding Astra Docker Template on Unraid
+## Adding Astra Docker Template on Unraid OS
 
 ### Prerequisites
 Before deploying Astra, ensure you have the necessary license and configuration files available:
