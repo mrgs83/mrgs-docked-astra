@@ -4,9 +4,9 @@ FROM ubuntu:latest
 # Update and install necessary packages
 RUN apt-get update && apt-get install -y curl
 
-# Download Astra binary
-RUN curl -Lo /usr/bin/astra https://cesbo.com/astra-latest && \
-    chmod +x /usr/bin/astra
+# Copy Astra binary
+COPY astra /usr/bin/astra
+RUN chmod +x /usr/bin/astra
 
 # Expose port for Astra
 EXPOSE 8000
