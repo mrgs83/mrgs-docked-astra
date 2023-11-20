@@ -5,8 +5,7 @@ FROM ubuntu:latest
 RUN apt-get update && apt-get install -y curl
 
 # Copy Astra binary
-COPY astra /usr/bin/astra
-RUN chmod +x /usr/bin/astra
+RUN wget -O /usr/bin/astra https://cesbo.com/astra-latest && chmod +x /usr/bin/astra
 
 # Expose port for Astra
 EXPOSE 8000
