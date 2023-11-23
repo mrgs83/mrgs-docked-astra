@@ -2,7 +2,7 @@
 FROM ubuntu:latest
 
 # Update and install necessary packages
-RUN apt-get update && apt-get install -y curl
+RUN apt-get update && apt-get install -y curl wget
 
 # Copy Astra binary
 RUN wget -O /usr/bin/astra https://cesbo.com/astra-latest && chmod +x /usr/bin/astra
